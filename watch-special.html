@@ -2,7 +2,24 @@
 <!--[if IE 8]>
 <html class="lt-ie10 lt-ie9 no-js" prefix="og: https://ogp.me/ns#" lang="en"><![endif]--><!--[if IE 9]>
 <html class="lt-ie10 no-js" prefix="og: https://ogp.me/ns#" lang="en"><![endif]--><!--[if gt IE 9]><!--><html class="no-js" prefix="og: https://ogp.me/ns#" lang="en"><!--<![endif]--><head><!--Player CSS--><link rel="stylesheet" type="text/css" href="https://miraculousladybug.cf/player.css"><link href="https://mediaelements.github.io/quality/quality.css" rel="stylesheet"><meta charset="utf-8"><link rel="shortcut icon" href="https://files.miraculousladybug.cf/favicon.png"><link rel="apple-touch-icon" href="https://files.miraculousladybug.cf/favicon.png"><link rel="icon" href="https://files.miraculousladybug.cf/favicon.png"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Specials | Miraculous: Tales of Ladybug & Cat Noir</title><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="msapplication-tap-highlight" content="no"><link href="https://d1di2lzuh97fh2.cloudfront.net/files/3l/3ly/3lyjwh.css?ph=ba709bf192" rel="stylesheet"><link href="https://d1di2lzuh97fh2.cloudfront.net/files/1p/1pk/1pkij3.css?ph=ba709bf192" rel="stylesheet"><link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/0y/0yu/0yu7ve.css?ph=ba709bf192" data-wnd_color_scheme_file=""><link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/2c/2cb/2cb9fy.css?ph=ba709bf192" data-wnd_additive_color_file=""><link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/4b/4bh/4bhipk.css?ph=ba709bf192" data-wnd_typography_file=""><meta name="description" content="All episodes from Miraculous Ladybug in HD, totally free and in more than three languages!"><meta name="keywords" content=""><meta name="generator" content="Webnode 2"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="format-detection" content="telephone=no">
+<script>
 
+    $(function() {
+
+
+   var people = [];
+
+   $.getJSON('https://miraculousladybug.cf/specials.json', function(data) {
+       $.each(data.person, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
+           "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+     });
+
+   });
+
+});
+</script>
 	<script
   src="https://code.jquery.com/jquery-3.5.0.min.js"
   integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
